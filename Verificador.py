@@ -29,7 +29,7 @@ def encontrar_notas_fiscais_nao_presentes(caminho_arquivo_principal, caminho_arq
         print(notas_fiscais_nao_presentes)
 
         # Verifica se o arquivo já existe e exclui, para garantir que ele seja refeito
-        arquivo_saida = 'C:/Users/fiscal/.vscode/Verificador de planilhas/notas_nao_presentes.xlsx'
+        arquivo_saida = 'C:/Users/usuario/.vscode/Verificador de planilhas/notas_nao_presentes.xlsx'
         if os.path.exists(arquivo_saida):
             os.remove(arquivo_saida)  # Remove o arquivo existente
             print(f"\nArquivo {arquivo_saida} removido para atualização...")
@@ -42,9 +42,9 @@ def encontrar_notas_fiscais_nao_presentes(caminho_arquivo_principal, caminho_arq
         print(f"Ocorreu um erro ao processar os arquivos: {e}")
 
 # Definindo os caminhos dos arquivos
-caminho_arquivo_principal = 'C:/Users/fiscal/.vscode/Verificador de planilhas/Relatoriobsoft.xlsx'
-caminho_arquivo_1 = 'C:/Users/fiscal/.vscode/Verificador de planilhas/nsdocs 20_03_2025 11_49_53.xlsx'
-caminho_arquivo_2 = 'C:/Users/fiscal/.vscode/Verificador de planilhas/gissonline084CC7A6155D00113BB16D0A4E4085BD.xlsx'
+caminho_arquivo_principal = 'C:/Users/usuario/.vscode/Verificador de planilhas/Relatoriobsoft.xlsx'
+caminho_arquivo_1 = 'C:/Users/usuario/.vscode/Verificador de planilhas/nsdocs 20_03_2025 11_49_53.xlsx'
+caminho_arquivo_2 = 'C:/Users/usuario/.vscode/Verificador de planilhas/gissonline084CC7A6155D00113BB16D0A4E4085BD.xlsx'
 
 # Definindo o nome da coluna principal de comparação    
 coluna_chave = 'NUMERO DA NOTA'
